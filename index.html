@@ -2,7 +2,7 @@
 <html>
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  
+  <script src="anime.min.js"></script>
   
   <title>Каталог 8Ж</title>
   <style>
@@ -64,6 +64,32 @@
       margin-left: auto;
       margin-right: auto;
     }
+    .teachdiv
+    {
+     background-color: #373737;
+    
+     width: 50rem;
+     border: 3px solid #969696;
+     display: flex;
+     flex-direction: initial;
+     text-align: center;
+
+    }
+    .AnimationR
+    {
+      width: 7px;
+      height: 10px;
+      background-color: aqua;
+      opacity: 0;
+      border-radius: 5px;
+      border: 4px solid #313131;
+    }
+    .AnimGross
+    {
+      width: 1000px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+    }
   </style>
  </head>
  <body style="margin: 0;           background: linear-gradient(to top, #313131, #c9d1ff); background-size: auto;
@@ -72,14 +98,32 @@
   <!-- Комментарий -->
   <p class="mediumt">Здесь будет информация про школьные предметы, имена и фамилии учителей,
     динамический список предметов, которые нужно будет взять в какой-либо день</p>
-  <p class="starttext">Новость: скоро будет список имён учителей, и вместе с ним навигация по сайту чтобы быстро искать нужную инфу <p>
   <p class="author">Автор: Хвостов Дмитрий</p>
+  <div class="AnimGross" id="el">
+    <div id="An" class="AnimationR" style="background-color: #000000;"></div>
+
+  </div>
+  <script>
+    anime({
+      targets: '#An',
+      width: '1300', // -> from '28px' to '100%',
+      opacity: '1',
+      duration: '2000',
+      easing: 'easeInOutQuad',
+      direction: 'alternate',
+    });
+  </script>
   <h2 class="starttext" style="padding-top: 5rem;">ГДЗ по всем предметам</h2>
   <h2 class="starttext" style="padding-top: 1rem;">↓</h2>
   <div class="cont">
     <div class="gdzdiv">
       
       <p class="mediumtt">
+        13 письменных и устных предметов
+        <br>
+        <br>
+        <br>
+        <br>
         <a class="mediumtt" href="https://www.euroki.org/gdz/ru/algebra/8_klass/reshebnik-po-algebre-8-klass-makarychev-fgos-931">Алгебра<br>  </a>
         <br>
         <a class="mediumtt" href="https://gdz.ru/class-8/biologiya/dragomilov/">Биология<br> </a>
@@ -110,6 +154,105 @@
       </p>
       <!-- <p class="mediumt" style="color: #ffffff">Рус. язык<br><br>Физика<br><br>Физкультура<br><br>Химия<br><br>Нейросеть для написания текстов (сообщений, конспектов, сочинений) (ответ ждать долго, но зато бесплатно) - https://trychatgpt.ru/<br><br></p> -->
     </div> 
+  </div>
+  <div class="AnimGross" id="el">
+    <div id="Ab" class="AnimationR"></div>
+
+  </div>
+  <script>
+    anime({
+      targets: '#Ab',
+      width: '1300', // -> from '28px' to '100%',
+      opacity: '1',
+      duration: '5000',
+      easing: 'easeInBack',
+      direction: 'alternate',
+      delay: '1000',
+      loop: true
+    });
+  </script>
+  <div class="cont">
+    <div class="teachdiv">
+      <p class="mediumtt">
+        Горшкова Галина Алексеевна<br>
+        Алгебра, Геометрия
+        <br>
+        <br>
+        <br>
+        Жигулина Анна Александровна<br>
+        Биология
+        <br>
+        <br>
+        <br>
+        Мамонтова Надежда Вячеславовна<br>
+        Немецкий (1 группа)
+        <br>
+        <br>
+        <br>
+        Юдакова Елена Александровна<br>
+        Немецкий (2 группа)
+        <br>
+        <br>
+        <br>
+        Зайцев Вадим Алексеевич<br>
+        География
+        <br>
+        <br>
+        <br>
+        Попова Лилит Рустамовна<br>
+        Английский (1 группа)
+        <br>
+        <br>
+        <br>
+        Чеботова Софья Владимировна<br>
+        Английский (2 группа)
+        <br>
+        <br>
+        <br>
+        Белотелов Юрий Станиславович<br>
+        Информатика (1 группа)
+        <br>
+        <br>
+        <br>
+        Сячина Ольга Васильевна<br>
+        Информатика (2 группа)
+        <br>
+        <br>
+        <br>
+        Фадеева Ольга Борисовна<br>
+        История, Обществознание
+        <br>
+        <br>
+        <br>
+        Коробова Ирина Владимировна<br>
+        Русский язык, Литература
+        <br>
+        <br>
+        <br>
+        Инякина Оксана Владимировна<br>
+        ОБЖ
+        <br>
+        <br>
+        <br>
+        Леонова Светлана Владимировна<br>
+        Физика
+        <br>
+        <br>
+        <br>
+        Ветров Вадим Сергеевич<br>
+        Химия
+        <br>
+        <br>
+        <br>
+        Никишина Татьяна Ивановна<br>
+        Музыка (капец я прям не знал)
+        <br>
+        <br>
+        <br>
+        Рыбакова Инга Николаевна<br>
+        Физкультура (<span style="background-color: rgb(0, 0, 0); font-size: small;">Тяжело запомнить прям ваще жесть жоск капец треш</span>)
+      </p>
+    </div>
   </div>
 
  </body>
